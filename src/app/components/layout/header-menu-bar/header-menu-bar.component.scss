@@ -1,0 +1,14 @@
+ #menu-bar ul{
+        display: flex;
+        list-style: none;
+        li {
+            padding: 5px;
+            border: 1px solid red;
+            background: green;
+            
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }

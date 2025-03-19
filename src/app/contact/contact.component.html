@@ -1,0 +1,10 @@
+<h1>Contact Page</h1>
+
+<div>
+  <div>Name: {{ ContactDataSubmitted.name }}</div>
+
+  <div>Email: {{ ContactDataSubmitted.email }}</div>
+
+  <div>Message: {{ ContactDataSubmitted.message }}</div>
+</div>
+<app-contact-form (formDataSubmittedObj)="ContactFormDataSubmitted($event)"></app-contact-form>

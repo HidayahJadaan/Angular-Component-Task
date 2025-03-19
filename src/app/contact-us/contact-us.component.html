@@ -1,0 +1,55 @@
+<app-header 
+  [bgClassIcon]="bgClassIcon" 
+  [bgClassColor]="bgClassColor" 
+  (darkModeToggled)="toggleDarkMode()">
+</app-header>
+
+<div class="main">
+  
+    <app-side-bar  [bgClassColor]="bgClassColor"></app-side-bar>
+
+
+
+  <div class="content">
+    <div class="contact-us">
+      <section class="contact container" id="contact">
+        <div class="contact-text">
+          <h2>Contact Us</h2>
+          <h4>Let's Work Together</h4>
+          <p>We will be happy :)</p>
+
+          <div class="contact-list">
+            <li><a href="#">Amman - Jordan</a></li>
+            <li>
+              <a href="mailto:hkaljadaan18@cit.just.edu.jo"
+                >idealinnovation.gmail.com</a
+              >
+            </li>
+            <li><a href="#" id="mobile">+962 797857643</a></li>
+          </div>
+          <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/hidayahjadaan/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://github.com/HidayahJadaan"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="#mobile"><i class="bx bxs-mobile"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          Name: <input type="text" (change)="setName($event)" /> Email:
+          <input type="text" (change)="setEmail($event)" /> Subject:
+          <input type="text" (change)="setSubject($event)" /> Message:
+          <textarea (change)="setMessage($event)"></textarea>
+          <button type="submit" (click)="sendContactUsData()">Send</button>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div>
+      <app-footer  [bgClassColor]="bgClassColor"></app-footer>
+</div>

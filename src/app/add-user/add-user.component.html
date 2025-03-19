@@ -1,0 +1,45 @@
+<app-header 
+  [bgClassIcon]="bgClassIcon" 
+  [bgClassColor]="bgClassColor" 
+  (darkModeToggled)="toggleDarkMode()">
+</app-header>
+
+<div class="main">
+  
+    <app-side-bar  [bgClassColor]="bgClassColor"></app-side-bar>
+
+
+  <div class="content">
+    <div class="add-user">
+      <div>
+        First Name: <input type="text" (change)="setFirstName($event)" />
+      
+      Last Name: <input type="text" (change)="setLastName($event)" />
+      Email: <input type="text" (change)="setEmail($event)" />
+      
+        Password: <input type="password" (change)="setPassword($event)" />
+      
+      
+        Confirm Password:
+        <input type="password" (change)="confirmPassword($event)" />
+      
+
+      <button type="submit" (click)="createNewUser()">Create User</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div>
+<app-footer  [bgClassColor]="bgClassColor"></app-footer>
+
+  <!-- <div>All Rights Recieved To IIH &copy; 2025</div>
+
+    <div>
+
+        <span>Developed By: </span>
+        <span>Hedaia </span>
+        <span>Jadaan</span>
+    </div> -->
+</div>

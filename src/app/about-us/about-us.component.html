@@ -1,0 +1,38 @@
+<app-header 
+  [bgClassIcon]="bgClassIcon" 
+  [bgClassColor]="bgClassColor" 
+  (darkModeToggled)="toggleDarkMode()">
+</app-header>
+
+<div class="main">
+  
+    <app-side-bar  [bgClassColor]="bgClassColor"></app-side-bar>
+ 
+
+  <div class="content">
+    <h3>OUR STORY</h3>
+
+    <div class="box">
+      <img
+        src="../assets/sidebar-logo.png"
+        alt="logo3"
+        width="300px"
+        height="250px"
+      />
+      <div class="box-content">
+        <h3>who we are</h3>
+        <p>
+          Ideal Inviotion House (IIH) is a leading provider of software
+          development and technology solutions, dedicated to delivering
+          innovative, AI-driven products, IoT solutions, and user-centered
+          designs for both web and mobile applications. We focus on creating
+          market-driven solutions and building strategic partnerships across
+          various industries, including NGOs, government, and private companies.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+<app-footer  [bgClassColor]="bgClassColor"></app-footer>
+</div>

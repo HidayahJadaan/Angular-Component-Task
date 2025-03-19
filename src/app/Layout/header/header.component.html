@@ -1,0 +1,17 @@
+<div class="header" [class]="bgClassColor">
+  <div class="greeting">
+    <div>Hello and Welcome,</div>
+    <div>
+      <app-user-name-component
+        [first-name]="'Hedayah'"
+        [last-name]="'Jadaan'">
+      </app-user-name-component>
+    </div>
+  </div>
+  <div class="header-right-side">
+    <span class="night-icon" (click)="onToggleDarkMode()">
+      <i class="bx" [class]="bgClassIcon"></i>
+    </span>
+    <button (click)="LogoutHandler()" class="logBtn">Logout</button>
+  </div>
+</div>

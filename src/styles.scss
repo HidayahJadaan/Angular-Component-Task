@@ -1,1 +1,202 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MuseoModerno', cursive;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+    overflow: hidden;
+    background: #f4f4f4;
+
+}
+
+/* Header */
+.header {
+  display: flex;
+  // justify-content: space-between;
+  justify-content: flex-end;
+  background: #f29494;
+  color: black;
+  text-align: center;
+  padding: 12px 7px 0 7px;
+  font-size: 20px;
+}
+
+// body.dark-mode .header {
+//   background-color: #333;
+//   color: white;
+// }
+
+
+/* Main container (Sidebar + Content) */
+.main {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #020312;
+  color: #fff;
+  padding: 20px;
+  min-height: 82vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  
+  // height: 80vh;
+  height:82vh;
+}
+// =======================================
+.box {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  border-top: 5px solid transparent;
+  cursor: pointer;
+  border-radius: 7px;
+
+  .myProfile-text {
+    width: 70%;
+    padding: 40px;
+  }
+
+  img {
+    width: 280px;
+    height: 280px;
+    border-radius: 60%;
+  }
+}
+
+.contact-text {
+  h4,
+  h2 {
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-list {
+  margin-bottom: 3rem;
+
+  li {
+    margin-bottom: 10px;
+    display: block;
+
+    a {
+      display: block;
+      color: var(--second-color);
+      font-size: var(--p-font);
+      font-weight: 600;
+      transition: all 0.4s ease;
+
+      &:hover {
+        transform: scale(1.01) translateY(-5px);
+        color: #a32a65;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.contact-icons {
+  i {
+    height: 40px;
+    width: 40px;
+    background: #020312;
+    border-radius: 0.5rem;
+    color: #ad1457;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      transform: scale(1.01) translateY(-5px);
+      color: #ad1457;
+      background: white;
+      box-shadow: #020312 0px 10px 25px;
+    }
+  }
+}
+
+// =======================================
+/* Footer */
+.footer {
+ display: flex;
+  justify-content: flex-end;
+  background: #f29494;
+  color: black;
+  text-align: center;
+  padding: 15px;
+}
+
+
+.logBtn{
+//   width: 100%;
+  padding: 5px;
+  background: #A32A65;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+   cursor: pointer;
+  transition: all 0.4s ease;
+  margin-bottom: 8px;
+}
+
+.logBtn:hover {
+//   background: #A32A65;
+border: 2px dashed #A32A65;
+background: transparent;
+color: #020312;
+
+}
+
+
+
+.no-dark {
+ 
+}
+
+.dark-mode {
+  background: #333;  
+  color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,60 @@
+<div class="loginPage flex">
+  <div class="containerr flex">
+    <!-- Left Side: Image -->
+    <div class="imageDiv">
+      <img src="../assets/about-left-image.png" alt="Nature Image" />
+      <div class="textDiv">
+        <h2 class="title">Think Big, Dream Bigger:</h2>
+        <p>Join a Team That Creates Impact!</p>
+      </div>
+    </div>
+
+    <!-- Right Side: Login Form -->
+    <div class="formDiv">
+      <div class="headerDiv flex">
+        <img src="assets/main-logo.png" alt="Logo" class="logo" />
+      </div>
+
+      <div class="form grid">
+        <span class="statusHolder"></span>
+        <div class="inputDiv">
+          <label for="username">Username</label>
+          <div class="input flex">
+            <i class="ri-user-fill icon"></i>
+            <input
+              type="text"
+              name="userEmail"
+              id="userEmail"
+              (change)="setUserName($event)"
+              placeholder="Enter Your Email..."
+            />
+          </div>
+        </div>
+
+        <div class="inputDiv">
+          <label for="password">Password</label>
+          <div class="input flex">
+            <i class="ri-shield-keyhole-fill"></i>
+            <input
+              type="password"
+              name="userPassword"
+              id="userPassword"
+              (change)="setUserPassword($event)"
+              id="password"
+              placeholder="Enter Your Password..."
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="btn flex" (click)="LoginValidation()">
+          <span>Login</span>
+          <i class="ri-login-circle-line icon"></i>
+        </button>
+
+        <span class="forgetPassword">
+          Forgot your password? <a href="#">Click Here</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

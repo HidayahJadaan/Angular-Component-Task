@@ -1,0 +1,27 @@
+<!-- <div class="header">
+    <div id="logo">
+        Logo
+    </div>
+    <div id="menu-bar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Message</a></li>
+        </ul>
+    </div>
+    <div id="user-menu">
+        <span>Abdullah Abulhouf</span>
+        <button>*&*</button>
+    </div>
+</div> -->
+
+<div class="header">
+    <div class="headerLogoContainer">
+
+        <app-header-logo></app-header-logo>
+        <app-header-menu-bar></app-header-menu-bar>
+    </div>
+    <app-header-user-menu [userName]="userName" (LogoutClick)="LogoutClicked($event)"></app-header-user-menu>
+
+</div>

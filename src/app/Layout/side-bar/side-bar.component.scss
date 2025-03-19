@@ -1,0 +1,44 @@
+.sidebar {
+  ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 15px;
+      width: 100%;
+
+      a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 4px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background: #f29494;
+          border-radius: 0;
+          color: #020312;
+        }
+
+        &.active {
+          background: #f29494;
+          color: #020312;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .logo {
+    margin-right: 2rem;
+
+    img {
+      width: 180px;
+      height: auto;
+    }
+  }
+}
